@@ -4,7 +4,7 @@ AMI_ID="ami-09c813fb71547fc4f"
 SG_ID="sg-08364b85f92f4ead4" # replace with your SG ID
 INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "frontend")
 ZONE_ID="Z00617031N524IA7TS2UJ" # replace with your ZONE ID
-DOMAIN_NAME="anjuma.store" # replace with your domain
+DOMAIN_NAME="daws84s.site" # replace with your domain
 
 #for instance in ${INSTANCES[@]}
 for instance in $@
