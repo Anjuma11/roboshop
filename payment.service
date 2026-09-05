@@ -5,11 +5,11 @@ Description=Payment Service
 User=root
 WorkingDirectory=/app
 // highlight-start
-Environment=CART_HOST=cart.anjuma.store
+Environment=CART_HOST=cart.anjuma.shop
 Environment=CART_PORT=8080
-Environment=USER_HOST=user.anjuma.store
+Environment=USER_HOST=user.anjuma.shop
 Environment=USER_PORT=8080
-Environment=AMQP_HOST=rabbitmq.anjuma.store
+Environment=AMQP_HOST=rabbitmq.anjuma.shop
 // highlight-end
 Environment=AMQP_USER=roboshop
 Environment=AMQP_PASS=Roboshop@1

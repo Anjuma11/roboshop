@@ -3,8 +3,8 @@ Description = Cart Service
 [Service]
 User=roboshop
 // highlight-start
-Environment=REDIS_HOST=redis.anjuma.store
-Environment=CATALOGUE_HOST=catalogue.anjuma.store
+Environment=REDIS_HOST=redis.anjuma.shop
+Environment=CATALOGUE_HOST=catalogue.anjuma.shop
 Environment=CATALOGUE_PORT=8080
 // highlight-end
 ExecStart=/bin/node /app/server.js
