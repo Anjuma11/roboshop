@@ -6,8 +6,8 @@ INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipp
 ZONE_ID="Z0271980354IME6K9Y1YY" # replace with your ZONE ID
 DOMAIN_NAME="anjuma.shop" # replace with your domain
 
-#for instance in ${INSTANCES[@]}
-for instance in $@ 
+for instance in ${INSTANCES[@]}
+#for instance in $@ 
 do
     INSTANCE_ID=$(aws ec2 run-instances --image-id ami-081b0a6eac00b4f53 --instance-type t3.micro --security-group-ids sg-0f68753c425461a57 --tag-specifications "ResourceType=instance,Tags=[{Key=Name, Value=$instance}]" --query "Instances[0].InstanceId" --output text)
     if [ $instance != "frontend" ]
