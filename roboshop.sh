@@ -10,7 +10,7 @@ DOMAIN_NAME="anjuma.shop" # replace with your domain
 for instance in ${INSTANCES[@]}
 #for instance in $@ 
 do
-    INSTANCE_ID=$(aws ec2 run-instances --image-id ami-081b0a6eac00b4f53 --instance-type t3.micro --security-group-ids sg-0f68753c425461a57 --tag-specifications "ResourceType=instance,Tags=[{Key=Name, Value=$instance}]" --query "Instances[0].InstanceId" --output text)
+    INSTANCE_ID=$(aws ec2 run-instances --image-id ami-081b0a6eac00b4f53 --instance-type t3.micro --security-group-ids sg-0f68753c425461a57 --tag-specifications "ResourceType=instance,Tags=[{Key=daws-84s, Value=$instance}]" --query "Instances[0].InstanceId" --output text)
     if [ $instance != "frontend" ]
     then
         IP=$(aws ec2 describe-instances --instance-ids $INSTANCE_ID --query "Reservations[0].Instances[0].PrivateIpAddress" --output text)
