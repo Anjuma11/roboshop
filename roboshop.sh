@@ -2,7 +2,8 @@
 
 AMI_ID="ami-081b0a6eac00b4f53"
 SG_ID="sg-0f68753c425461a57" # replace with your SG ID
-INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "frontend")
+#INSTANCES=("mongodb" "redis" "mysql" "rabbitmq" "catalogue" "user" "cart" "shipping" "payment" "dispatch" "frontend")
+INSTANCES=("frontend" "backend" "mysql")
 ZONE_ID="Z0271980354IME6K9Y1YY" # replace with your ZONE ID
 DOMAIN_NAME="anjuma.shop" # replace with your domain
 
